@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sorteador Oilema - Aplicativo web de sorteio online com design moderno, animações fluidas e tema agrícola. Oilema - Comércio de Sementes.">
+  <title>Sorteador Oilema | Sorteio Inteligente</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="loader-seed">🌱</div>
+      <div class="loader-text">Carregando...</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo nav-logo-center">
+        <img src="Logo_Branco_Oilema.webp" alt="Oilema Logo">
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+
+    <div class="container">
+      <!-- Left: Content -->
+      <div class="hero-content">
+        <h1>
+          Sorteador
+          <span class="line2 gradient-text">Oilema</span>
+        </h1>
+
+        <div class="typing-line">
+          <span class="typing-text"></span><span class="cursor">|</span>
+        </div>
+
+      </div>
+
+      <!-- Right: Mockup -->
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-mockup">
+          <div class="mockup-inner">
+            <div class="mockup-header">
+              <div class="mockup-logo-text">Escolha o intervalo e boa sorte!</div>
+              <div class="mockup-subtitle"></div>
+            </div>
+            <div class="mockup-inputs">
+              <div class="mockup-input">
+                <label for="minVal">Mín</label>
+                <input type="number" id="minVal" class="value-input" value="1" min="0">
+              </div>
+              <div class="mockup-input">
+                <label for="maxVal">Máx</label>
+                <input type="number" id="maxVal" class="value-input" value="100" min="0">
+              </div>
+            </div>
+            <button class="mockup-btn">🌱 Sortear</button>
+            <div class="mockup-result">
+              <div class="mockup-result-number"></div>
+              <div class="mockup-result-label">✨ Número Sorteado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Histórico -->
+      <div class="historico-panel">
+        <div class="historico-header">
+          <span>🕐 HISTÓRICO</span>
+          <span class="historico-count">Sorteios: <strong id="contagem">0</strong></span>
+          <button class="historico-limpar" id="limparHistorico">Limpar</button>
+        </div>
+        <div class="historico-lista" id="historicoLista">
+          <span class="historico-vazio">Nenhum sorteio realizado ainda</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom info bar -->
+    <div class="hero-info-bar">
+      <div class="info-item">
+        <span class="emoji">📅</span>
+        <span id="datetime-brasilia"><strong>Carregando...</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
